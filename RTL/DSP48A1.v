@@ -8,18 +8,18 @@
  ************************************************************************************************************************************************************
  * Date          :  7 / 23 / 2024
  ************************************************************************************************************************************************************
- * Brief         :  The Spartan-6 family offers a high density of DSP48A1 slices, making it ideal for computationally intensive applications.
- 					The DSP48A1 is an evolution of the DSP48A slice found in the Extended Spartan-3A FPGAs. 
- 					This design supports a wide range of DSP algorithms with minimal use of general-purpose FPGA logic, resulting in low power consumption, 
- 					high performance, and efficient device utilization.
-					On initial inspection, the DSP48A1 slice features an 18-bit input pre-adder, followed by an 18 x 18 bit two's complement multiplier,
-					and a 48-bit sign-extended adder/subtracter/accumulator. This structure is widely used in digital signal processing.
-					Closer examination reveals several advanced features that enhance the functionality, versatility, and speed of this arithmetic block.
-					The slice includes programmable pipelining of input operands, intermediate products, and accumulator outputs, which boosts throughput. 
-					The 48-bit internal bus supports extensive aggregation of DSP slices. The C input port enables the creation of various 3-input mathematical functions,
-					such as 3-input addition by cascading the pre-adder with the post-adder, and 2-input multiplication combined with a single addition. 
-					The D input provides a second operand for the pre-adder, optimizing DSP48A1 slice usage in symmetric filters.
-					By integrating these features, the DSP48A1 slice offers a powerful and flexible solution for implementing complex DSP functions with high efficiency.
+ * Brief         : 	The Spartan-6 family offers a high density of DSP48A1 slices, making it ideal for computationally intensive applications.
+ 			The DSP48A1 is an evolution of the DSP48A slice found in the Extended Spartan-3A FPGAs. 
+ 		    	This design supports a wide range of DSP algorithms with minimal use of general-purpose FPGA logic, resulting in low power consumption, 
+ 			high performance, and efficient device utilization.
+			On initial inspection, the DSP48A1 slice features an 18-bit input pre-adder, followed by an 18 x 18 bit two's complement multiplier,
+			and a 48-bit sign-extended adder/subtracter/accumulator. This structure is widely used in digital signal processing.
+			Closer examination reveals several advanced features that enhance the functionality, versatility, and speed of this arithmetic block.
+			The slice includes programmable pipelining of input operands, intermediate products, and accumulator outputs, which boosts throughput. 
+			The 48-bit internal bus supports extensive aggregation of DSP slices. The C input port enables the creation of various 3-input mathematical functions,
+			such as 3-input addition by cascading the pre-adder with the post-adder, and 2-input multiplication combined with a single addition. 
+			The D input provides a second operand for the pre-adder, optimizing DSP48A1 slice usage in symmetric filters.
+			By integrating these features, the DSP48A1 slice offers a powerful and flexible solution for implementing complex DSP functions with high efficiency.
  *************************************************************************************************************************************************************
  */
 module DSP48A1 (A,B,D,C,CLK,CARRYIN,OPMODE,BCIN,RSTA,RSTB,RSTM,RSTP,RSTC,RSTD,RSTCARRYIN,RSTOPMODE,
