@@ -11,10 +11,11 @@ Vivado Design Flow: Detailed steps for running elaboration, synthesis, and imple
 QuestaSim Integration: Usage of do files to run the QuestaSim flow and capture waveforms for analysis.
 
 ## Directory Structure
-src/: Contains the RTL code for the DSP48A1 slice.
-testbench/: Includes the testbench code and do files for simulation.
-constraints/: Timing constraints file for the design.
-vivado/: Project files for elaboration, synthesis, and implementation in Vivado.
+Top Module (DSP48A1): Contains the RTL code for the DSP48A1 slice.
+Block Module (BLOCK): The building block used in this design.
+Testbench: Includes the testbench code and do file for simulation.
+Constraints File: Timing constraints file for the design.
+Vivado/: Project files for elaboration, synthesis, and implementation in Vivado.
 results/: Output snippets from QuestaSim and Vivado, including waveforms, schematics, utilization, and timing reports.
 
 ## Some Snippets :
