@@ -1,27 +1,3 @@
-/*
- *************************************************************************************************************************************************************
- * File Name     :  DSP48A1_tb.v
- ************************************************************************************************************************************************************
- * Module Name   :  DSP48A1_tb
- ************************************************************************************************************************************************************
- * Author        :  Khaled Ahmed Hamed Abdelaziz
- ************************************************************************************************************************************************************
- * Date          :  7 / 24 / 2024
- ************************************************************************************************************************************************************
- * Brief         :  The testbench DSP48A1_tb is designed to thoroughly test the DSP48A1 DSP slice.
-                    The main structures are : Signals Declaration , DUT Instantiation , Test Stimiulus Generator , Test Monitor & Results.
-                    Test Cases (To be checked) :
-                    Initialization and Reset: The module is initialized and all reset signals are asserted.
-                    Basic Addition: Tests a simple addition operation.
-                    Basic Subtraction: Tests a simple subtraction operation.
-                    Multiplication with Addition: Tests multiplication followed by addition.
-                    Accumulation with Carry-In: Tests an addition operation with carry-in enabled.
-                    Chained Operations: Tests a complex operation with chained inputs.
-                    Cascade Input Handling: Tests the handling of cascade input (BCIN).
-                    Complex Operations: Tests different complex operations using various OPMODE settings.
-                    Final Reset: All signals are reset, and the simulation is stopped.
- *************************************************************************************************************************************************************
- */
 `timescale 1ns/1ps
 module DSP48A1_tb();
 parameter A0REG = 0 ;
