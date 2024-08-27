@@ -25,4 +25,4 @@ Vivado Design Flow: Detailed steps for running elaboration, synthesis, and imple
 QuestaSim Integration: Usage of do files to run the QuestaSim flow and capture waveforms for analysis.
 
 ## References :
-[Xilinx User Guide]: (https://docs.amd.com/v/u/en-US/ug389)
+[Xilinx User Guide](https://docs.amd.com/v/u/en-US/ug389)
